@@ -11,6 +11,8 @@ public class CalculadoraT2POO {
         System.out.println(String.format("\nMultiplicacion: %f", calculadora.multiplicacion()));
         
         System.out.println("Haciendo cambios");
+        System.out.println("Hola");
+        System.out.println("HNUEVO CAMBIO");
     }
     
 }
