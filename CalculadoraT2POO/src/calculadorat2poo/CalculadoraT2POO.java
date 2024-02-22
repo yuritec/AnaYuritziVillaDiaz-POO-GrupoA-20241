@@ -1,20 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package calculadorat2poo;
 
-/**
- *
- * @author yuryd
- */
 public class CalculadoraT2POO {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+         calculadora calculadora= new calculadora(8,9);
+        System.out.println(calculadora.suma());
+        System.out.println(String.format("\nSuma: %.2f", calculadora.suma()));
+        System.out.println(String.format("\nResta: %f", calculadora.resta()));
+        System.out.println(String.format("\nMultiplicacion: %f", calculadora.multiplicacion()));
+        
+        System.out.println("Haciendo cambios");
     }
     
 }
