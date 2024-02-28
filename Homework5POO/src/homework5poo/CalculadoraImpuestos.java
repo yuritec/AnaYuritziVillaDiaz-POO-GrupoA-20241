@@ -16,7 +16,7 @@ public class CalculadoraImpuestos {
         if(porcentajeImpuesto==0 && dividendos==0 && exencion==0){
             return ingresos+0.15; 
         }
-        else if (dividendos>=0 || exencion>=0){   
+        else if (ingresos>0 && porcentajeImpuesto>0 && dividendos==0 && exencion==0){   
             return ingresos*(porcentajeImpuesto/100);
         }
          else {
@@ -28,33 +28,8 @@ public class CalculadoraImpuestos {
                 return 0;
             }
         }
-    }
-    
-    
-    
-    
-    
-    
-    
-    /*
-    double calcularImpuestos(int ingresos){
-       return ingresos+0.15; 
-    }
-    
-    double calcularImpuestos(int ingresos, double porcentajeImpuesto){
-        return ingresos*(porcentajeImpuesto/100);
-    }
-    
-    double calcularImpuestos(int ingresos, double dividendos, double porcentajeImpuesto, double exencion){
-        double impuestos=dividendos*(porcentajeImpuesto/100);
-        if(impuestos>exencion){
-        return impuestos-exencion;    
-        }
-        else{
-            return 0;
-        }
-        
-    }*/
+    }    
+  
 
 
         
