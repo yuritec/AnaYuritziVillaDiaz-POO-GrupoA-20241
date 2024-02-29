@@ -7,7 +7,7 @@ public class Homework5POO {
 
     public static void main(String[] args) {
        Scanner leer=new Scanner(System.in);
-      
+      /*
        Rectangulo rectangulo=new Rectangulo();     
         System.out.println("Ingresa la base:"); 
         double base=leer.nextDouble();
@@ -25,7 +25,7 @@ public class Homework5POO {
         System.out.println("Ingrese horasExtra: ");
         double horasExtras=leer.nextDouble();
         System.out.println("Salario total de la persona: "+empleado.calcularSalario(sueldoBase, bonificaciones, horasExtras));
-       
+       */
         
         CalculadoraImpuestos calculo = new CalculadoraImpuestos();
         System.out.println("Ingrese Ingresos para calcular impuestos: ");  
@@ -36,8 +36,20 @@ public class Homework5POO {
         double dividendos=leer.nextDouble();
         System.out.println("Ingrese Exenciones: ");
         double exenciones=leer.nextDouble();
-        System.out.println("El ingreso es de: "+calculo.calcularImpuestos(ingresos, dividendos, porcentajeImpuestos, exenciones));
+        System.out.println("El ingreso es de: "+calculo.calcularImpuestos(ingresos, porcentajeImpuestos, dividendos, exenciones));
         
+        CalculadoraImpuestos2 calculo2 =new CalculadoraImpuestos2();
+        System.out.println("Ingrese Ingresos para calcular impuestos: ");  
+        int ingreso=leer.nextInt();
+        System.out.println("Ingrese Porcentaje de impuestos: ");
+        double porcentajeImpuesto=leer.nextDouble();
+        System.out.println("Ingrese Dividendos: ");
+        double dividendo=leer.nextDouble();
+        System.out.println("Ingrese Exenciones: ");
+        double exencione=leer.nextDouble();
+        System.out.println("El ingreso es de: "+calculo2.calcularImpuestos2(ingreso));
+        System.out.println("El ingreso con impuesto es de: "+calculo2.calcularImpuestos2(ingreso, porcentajeImpuesto));
+        System.out.println("El ingreso con impuesto, dividendos y exenciones es de: "+calculo2.calcularImpuestos2(dividendos, porcentajeImpuesto, exencione));
         
        
                 
